@@ -35,21 +35,31 @@ To use the weather fetching functionality, you will need to sign up for an OpenW
 
 ## Code Overview
 get_current_weather(city): Fetches current weather details for the specified city.
+
 read_historical_data(filename): Reads historical weather data from a CSV file.
+
 prepare_data(data): Prepares the dataset by encoding categorical features and splitting data into features and target.
+
 train_test_model(X, y): Trains a Random Forest Classifier to predict if it will rain tomorrow.
+
 prepare_regression_data(data, feature): Prepares data for regression model training, predicting the next value based on previous data.
+
 train_regression_model(X, y): Trains a Random Forest Regressor for predicting continuous variables like temperature and humidity.
+
 predict_future(model, current_value): Uses a trained regression model to predict future values.
+
 weather_view(): The main function that prompts the user for a city name, retrieves the weather data, and displays predictions for rain, temperature, and humidity.
 
+
 Usage
+
 Ensure you have all the required libraries installed:
 
 pip install requests numpy pandas scikit-learn pytz
 
 
 To get weather updates and predictions, run the script:
+
 weather_view()
 
 
