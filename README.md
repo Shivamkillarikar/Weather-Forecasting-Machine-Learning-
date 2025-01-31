@@ -1,8 +1,8 @@
-Weather Prediction System
+## Weather Prediction System
 
 This Python project allows users to get real-time weather updates for any city and predict future temperature and humidity values using historical weather data. The system fetches current weather data from the OpenWeather API and processes it for predictions using machine learning models. It also predicts whether it will rain the next day based on historical weather data.
 
-Features
+## Features
 Current Weather Data Fetching:
 
 Retrieves the current weather conditions of a specified city.
@@ -33,7 +33,7 @@ pytz for timezone handling.
 API Key
 To use the weather fetching functionality, you will need to sign up for an OpenWeather API key. Replace API_KEY with your own key.
 
-Code Overview
+## Code Overview
 get_current_weather(city): Fetches current weather details for the specified city.
 read_historical_data(filename): Reads historical weather data from a CSV file.
 prepare_data(data): Prepares the dataset by encoding categorical features and splitting data into features and target.
