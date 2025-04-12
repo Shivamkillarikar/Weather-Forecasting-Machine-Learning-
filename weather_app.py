@@ -97,7 +97,7 @@ city = st.text_input("Enter a city name", "Mumbai")
 if city:
     current_weather = get_current_weather(city)
     if current_weather:
-        df = read_historical_data("weather.csv")
+        df = read_historical_data("data.csv")
         X, y, le = prepare_data(df)
         rain_model = train_test_model(X, y)
 
